@@ -250,7 +250,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rolex/proprietary/vendor/lib/egl/libRBGLESv2_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libRBGLESv2_adreno.so \
     vendor/xiaomi/rolex/proprietary/vendor/lib/hw/activity_recognition.msm8937.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/activity_recognition.msm8937.so \
     vendor/xiaomi/rolex/proprietary/vendor/lib/hw/sound_trigger.primary.msm8937.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sound_trigger.primary.msm8937.so \
-    vendor/xiaomi/rolex/proprietary/vendor/lib/hw/vulkan.msm8937.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vulkan.msm8937.so \
     vendor/xiaomi/rolex/proprietary/vendor/lib/libactuator_ad5816g.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_ad5816g.so \
     vendor/xiaomi/rolex/proprietary/vendor/lib/libmm-hdcpmgr.so:$(TARGET_COPY_OUT_VENDOR)lib/libmm-hdcpmgr.so \
     vendor/xiaomi/rolex/proprietary/vendor/lib/libactuator_ad5823.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_ad5823.so \
@@ -2097,6 +2096,13 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rolex/proprietary/product/etc/init/dpmd.rc:$(TARGET_COPY_OUT_PRODUCT)/etc/init/dpmd.rc \
     vendor/xiaomi/rolex/proprietary/product/etc/permissions/com.qti.dpmframework.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.qti.dpmframework.xml \
     vendor/xiaomi/rolex/proprietary/product/etc/permissions/dpmapi.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/dpmapi.xml \
+    vendor/xiaomi/rolex/proprietary/vendor/etc/permissions/8937/android.hardware.opengles.aep.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/8937/android.hardware.opengles.aep.xml \
+    vendor/xiaomi/rolex/proprietary/vendor/etc/permissions/8937/android.hardware.vulkan.compute-0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/8937/android.hardware.vulkan.compute-0.xml \
+    vendor/xiaomi/rolex/proprietary/vendor/etc/permissions/8937/android.hardware.vulkan.level-0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/8937/android.hardware.vulkan.level-0.xml \
+    vendor/xiaomi/rolex/proprietary/vendor/etc/permissions/8937/android.hardware.vulkan.version-1_0_3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/8937/android.hardware.vulkan.version-1_0_3.xml \
+    vendor/xiaomi/rolex/proprietary/vendor/etc/permissions/8937/android.hardware.vulkan.version-1_1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/8937/android.hardware.vulkan.version-1_1.xml \
+    vendor/xiaomi/rolex/proprietary/vendor/lib/8917/libllvm-qgl.msm8917.so:$(TARGET_COPY_OUT_VENDOR)/lib/8917/libllvm-qgl.msm8917.so \
+    vendor/xiaomi/rolex/proprietary/vendor/lib/8937/libllvm-qgl.so:$(TARGET_COPY_OUT_VENDOR)/lib/8937/libllvm-qgl.so \
     vendor/xiaomi/rolex/proprietary/product/framework/com.qti.dpmframework.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/com.qti.dpmframework.jar \
     vendor/xiaomi/rolex/proprietary/product/framework/dpmapi.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/dpmapi.jar \
     vendor/xiaomi/rolex/proprietary/product/lib64/com.qualcomm.qti.dpm.api@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/com.qualcomm.qti.dpm.api@1.0.so \
@@ -2131,10 +2137,11 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rolex/proprietary/vendor/lib64/hw/activity_recognition.msm8937.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/activity_recognition.msm8937.so \
     vendor/xiaomi/rolex/proprietary/vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so \
     vendor/xiaomi/rolex/proprietary/vendor/lib64/hw/gatekeeper.msm8937.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gatekeeper.msm8937.so \
+    vendor/xiaomi/rolex/proprietary/vendor/lib64/hw/8917/vulkan.msm8917.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/8917/vulkan.msm8917.so \
+    vendor/xiaomi/rolex/proprietary/vendor/lib64/hw/8937/vulkan.msm8937.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/8937/vulkan.msm8937.so \
     vendor/xiaomi/rolex/proprietary/vendor/lib64/hw/keystore.msm8937.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/keystore.msm8937.so \
     vendor/xiaomi/rolex/proprietary/vendor/lib64/hw/vendor.qti.gnss@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.gnss@1.0-impl.so \
     vendor/xiaomi/rolex/proprietary/vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so \
-    vendor/xiaomi/rolex/proprietary/vendor/lib64/hw/vulkan.msm8937.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vulkan.msm8937.so \
      vendor/xiaomi/rolex/proprietary/vendor/lib/libpdmapper.so:$(TARGET_COPY_OUT_VENDOR)lib/libpdmapper.so \
     vendor/xiaomi/rolex/proprietary/vendor/lib64/libpdmapper.so:$(TARGET_COPY_OUT_VENDOR)lib64/libpdmapper.so \
     vendor/xiaomi/rolex/proprietary/vendor/lib64/lib-dplmedia.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-dplmedia.so \
@@ -2152,6 +2159,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rolex/proprietary/vendor/lib64/lib-siputility.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-siputility.so \
     vendor/xiaomi/rolex/proprietary/vendor/lib64/lib-uceservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-uceservice.so \
     vendor/xiaomi/rolex/proprietary/vendor/lib/hw/consumerir.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/consumerir.default.so \
+    vendor/xiaomi/rolex/proprietary/vendor/lib/hw/8917/vulkan.msm8917.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/8917/vulkan.msm8917.so \
+    vendor/xiaomi/rolex/proprietary/vendor/lib/hw/8937/vulkan.msm8937.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/8937/vulkan.msm8937.so \
     vendor/xiaomi/rolex/proprietary/vendor/lib64/libmmcamera_cac3_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_cac3_lib.so \
     vendor/xiaomi/rolex/proprietary/vendor/lib64/libmmcamera_dbg.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_dbg.so \
     vendor/xiaomi/rolex/proprietary/vendor/lib64/libmmcamera_tintless_algo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_tintless_algo.so \
@@ -2236,6 +2245,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rolex/proprietary/vendor/lib64/librs_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librs_adreno.so \
     vendor/xiaomi/rolex/proprietary/vendor/lib64/librs_adreno_sha1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librs_adreno_sha1.so \
     vendor/xiaomi/rolex/proprietary/vendor/lib64/libscalar.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscalar.so \
+    vendor/xiaomi/rolex/proprietary/vendor/lib64/8917/libllvm-qgl.msm8917.so:$(TARGET_COPY_OUT_VENDOR)/lib64/8917/libllvm-qgl.msm8917.so \
+    vendor/xiaomi/rolex/proprietary/vendor/lib64/8937/libllvm-qgl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/8937/libllvm-qgl.so \
     vendor/xiaomi/rolex/proprietary/vendor/lib64/libsc-a3xx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsc-a3xx.so \
     vendor/xiaomi/rolex/proprietary/vendor/lib64/libsdm-color.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdm-color.so \
     vendor/xiaomi/rolex/proprietary/vendor/lib64/libsdm-diag.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdm-diag.so \
